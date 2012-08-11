@@ -1,4 +1,4 @@
-package org.hopto.seed419.File;
+package org.hopto.seed419.file;
 
 import org.hopto.seed419.CreeperNotify;
 

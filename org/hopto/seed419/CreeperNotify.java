@@ -1,8 +1,8 @@
 package org.hopto.seed419;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import org.hopto.seed419.File.ConfigurationFile;
-import org.hopto.seed419.Listeners.CreeperPowerupListener;
+import org.hopto.seed419.file.ConfigurationFile;
+import org.hopto.seed419.listeners.CreeperPowerupListener;
 
 public class CreeperNotify extends JavaPlugin {
 

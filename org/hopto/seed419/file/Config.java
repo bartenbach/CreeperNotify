@@ -1,4 +1,4 @@
-package org.hopto.seed419.File;
+package org.hopto.seed419.file;
 
 /**
  * Attribute Only (Public) License
@@ -26,6 +26,10 @@ package org.hopto.seed419.File;
  */
 public class Config {
 
+
     public final static String usePerms = "CreeperNotify Configuration.Use Permissions";
+    public final static String useCreeperRadar = "CreeperNotify Configuration.Notify only when user has Creeper Radar tool?";
+    public final static String radarToolID = "CreeperNotify Configuration.Creeper radar tool ID";
+
 
 }
