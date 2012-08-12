@@ -1,4 +1,6 @@
 CreeperNotify Configuration:
    Use Permissions: true
-   Notify only when user has Creeper Radar tool?: false
    Creeper radar tool ID: 345
+   Require creeper radar tool for notifications: false
+   If player has a compass, track the creeper location with it: true
+   Endermen jam the creeper radar: false
