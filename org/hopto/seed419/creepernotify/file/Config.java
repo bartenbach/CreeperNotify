@@ -1,4 +1,4 @@
-package org.hopto.seed419.file;
+package org.hopto.seed419.creepernotify.file;
 
 /**
  * Attribute Only (Public) License
@@ -32,6 +32,7 @@ public class Config {
     public final static String updateCompass = "CreeperNotify Configuration.If player has a compass, track the creeper location with it";
     public final static String radarJam = "CreeperNotify Configuration.Endermen jam the creeper radar";
     public final static String radarToolID = "CreeperNotify Configuration.Creeper radar tool ID";
+    public final static String sound = "CreeperNotify Configuration.Play sound on notification";
 
 
 }

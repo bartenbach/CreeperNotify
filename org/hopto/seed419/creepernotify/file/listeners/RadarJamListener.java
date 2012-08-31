@@ -1,4 +1,4 @@
-package org.hopto.seed419.listeners;
+package org.hopto.seed419.creepernotify.file.listeners;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -10,7 +10,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.hopto.seed419.CreeperNotify;
-import org.hopto.seed419.file.Config;
+import org.hopto.seed419.creepernotify.file.Config;
 
 import java.util.HashSet;
 
@@ -76,7 +76,6 @@ public class RadarJamListener implements Listener {
                     }
                 }
                 if (!ender) {
-                    System.out.println("compass clear");
                     event.getPlayer().setCompassTarget(event.getPlayer().getBedSpawnLocation());
                     event.getPlayer().sendMessage(radarClear);
                     jammedPlayers.remove(event.getPlayer().getName());
@@ -92,7 +91,6 @@ public class RadarJamListener implements Listener {
             public void run() {
                 for (Entity x : event.getPlayer().getNearbyEntities(15.0, 15.0, 15.0)) {
                     if (x.getType() == EntityType.ENDERMAN) {
-                        //System.out.println("jamming compass");
                         event.getPlayer().setCompassTarget(new Location(world, event.getPlayer().getLocation().getX(), y, (event.getPlayer().getLocation().getZ() + 5.0)));
                         sleep();
                         event.getPlayer().setCompassTarget(new Location(world, (event.getPlayer().getLocation().getX() - 5.0), y, (event.getPlayer().getLocation().getZ() + 5.0)));

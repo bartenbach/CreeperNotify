@@ -1,0 +1,8 @@
+name: CreeperNotify
+main: org.hopto.seed419.creepernotify.CreeperNotify
+author: seed419
+version: 0.0.7
+description: Notifies players when a creeper has targeted them.
+permissions:
+    CreeperNotify.notify:
+        description: Notifies player when a creeper has targeted them.

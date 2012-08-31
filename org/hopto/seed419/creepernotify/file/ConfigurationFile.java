@@ -1,6 +1,6 @@
-package org.hopto.seed419.file;
+package org.hopto.seed419.creepernotify.file;
 
-import org.hopto.seed419.CreeperNotify;
+import org.hopto.seed419.creepernotify.CreeperNotify;
 
 /**
  * Attribute Only (Public) License
