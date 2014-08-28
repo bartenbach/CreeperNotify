@@ -1,0 +1,5 @@
+CreeperNotify Configuration:
+    Notification message: "&e[&aCreeper Alert&e]"
+    Use Permissions: true
+    Notify only when user has Creeper Radar tool?: false
+    Creeper radar tool ID: 345

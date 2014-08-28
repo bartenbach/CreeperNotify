@@ -1,0 +1,19 @@
+name: CreeperNotify
+main: co.proxa.creepernotify.CreeperNotify
+author: proxa
+version: 0.0.7
+description: Notifies players when a creeper has targeted them.
+permissions:
+    creepernotify.notify:
+        description: Notifies player when a creeper has targeted them.
+        default: false
+    creepernotify.manage:
+        description: Allows management of CreeperNotify plugin
+        default: op
+commands:
+    cn:
+        description: Root command of CreeperNotify
+        aliases: creepernotify
+        permission: creepernotify.manage
+        permission-message: You do not have the required permission.
+        usage: "Usage: /cn [argument]"
