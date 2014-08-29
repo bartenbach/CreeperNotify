@@ -1,7 +1,7 @@
 name: CreeperNotify
 main: co.proxa.creepernotify.CreeperNotify
 author: proxa
-version: 0.0.7
+version: 0.0.8
 description: Notifies players when a creeper has targeted them.
 permissions:
     creepernotify.notify:
