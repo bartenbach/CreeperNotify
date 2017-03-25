@@ -1,11 +1,11 @@
 package co.proxa.creepernotify;
 
+import co.proxa.creepernotify.file.ConfigurationFile;
 import co.proxa.creepernotify.listeners.EntityTargetListener;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
-import co.proxa.creepernotify.file.ConfigurationFile;
 
 public class CreeperNotify extends JavaPlugin {
 

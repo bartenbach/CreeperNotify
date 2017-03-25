@@ -34,7 +34,6 @@ public class EntityTargetListener implements Listener {
             } else if (!cf.getUseCreeperRadar() && (player.hasPermission("creepernotify.notify") || !cf.getUsePermissions())){
                 checkHashmap(player);
                 if (player.getInventory().contains(Material.getMaterial(cf.getCreeperRadarToolID()))) {
-                    //System.out.println("Setting compass target...");
                     player.setCompassTarget(event.getEntity().getLocation());
                 }
             }
@@ -58,14 +57,12 @@ public class EntityTargetListener implements Listener {
 
     public void sendNotification(Player player) {
         player.sendMessage(cf.getNotificationMessage());
-        //cn.getLogger().info(player.getName() + " has been targeted by a creeper!");
     }
 
     public void scheduleTask(final EntityTargetLivingEntityEvent event, final Player player) {
         cn.getServer().getScheduler().scheduleSyncDelayedTask(cn, new Runnable() {
             @Override
             public void run() {
-                //System.out.println("Running here.");
                 if (event.getTarget().equals(player) && !event.getEntity().isDead() && event.getTarget().getNearbyEntities(15.0, 15.0, 15.0).contains(event.getEntity())) {
                     player.setCompassTarget(event.getEntity().getLocation());
                     scheduleTask(event, player);
